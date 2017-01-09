@@ -12,7 +12,7 @@ class Solution(object):
         """
         candidate, count = None, 0
         for e in nums:
-            if candidate == None:
+            if count == 0:
                 candidate, count = e, 1
             elif e == candidate:
                 count += 1
@@ -21,6 +21,7 @@ class Solution(object):
         return candidate
 ```
 出现的问题：其实很巧妙地地方在于 `count -= 1` ,但感觉这样找不到多于 n/2 众数的时候会返回一个不是global最多的数字
+另一个很巧妙的地方： 判断初始的入口 `if count == 0` 开始写成了 `if candidate == None` which doesn't work well. 入口不只是candidate是None好嘛，还有被减成0的count呢
 自己傻的问题：1. 循环写错 2. 应该先判断初始条件 3. 赋值写在一行好看点
 
 ## 以下列出几种不同的方法
