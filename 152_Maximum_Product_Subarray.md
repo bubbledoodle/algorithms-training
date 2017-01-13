@@ -57,4 +57,4 @@ class Solution(object):
 ```
 
 ## thinking:
-今天
+今天看了DP问题，那么回头拿来这道题再看就不是那么困难了。有两个点需要注意，也是
