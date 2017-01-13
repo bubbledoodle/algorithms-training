@@ -7,6 +7,7 @@
 
 
 ## Basic coding ideas
+这部分呢看到了一些个很常运用的coding手段。属于building block之类的吧😝
 ### min
 traverse through an array. update while find a smaller one
 
