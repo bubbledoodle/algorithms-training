@@ -17,3 +17,13 @@ traverse through an array. update while find a smaller one
 
 ### multiple layer
 其实想这个东西很久了。有时候会绕在里边。在动态规划中设定了一个d(i) array. i这个index有两层作用。 一层作为原array的index另一层作为构造的d的index，而两者恰好对应。
+
+## More training
+1. [LIS O(nLogn)](https://www.felix021.com/blog/read.php?1587)
+2. 无向图G有N个结点(1 < N <= 1000)及一些边，每一条边上带有正的权重值。 找到结点1到结点N的最短路径，或者输出不存在这样的路径。提示：在每一步中，对于那些没有计算过的结点， 及那些已经计算出从结点1到它的最短路径的结点，如果它们间有边， 则计算从结点1到未计算结点的最短路径。
+3. [ZigZag - 2003 TCCC Semifinals 3](https://community.topcoder.com/tc?module=ProblemDetail&rd=4493&pm=1259)
+4. [BadNeighbors - 2004 TCCC Round 4](https://community.topcoder.com/tc?module=ProblemDetail&rd=5009&pm=2402)
+5. [FlowerGarden - 2004 TCCC Round 1](https://community.topcoder.com/tc?module=ProblemDetail&rd=5006&pm=1918)
+6. [AvoidRoads - 2003 TCO Semifinals 4](https://community.topcoder.com/tc?module=ProblemDetail&rd=4709&pm=1889)
+7. [ChessMetric - 2003 TCCC Round 4](https://community.topcoder.com/tc?module=ProblemDetail&rd=4482&pm=1592)
+8. 
