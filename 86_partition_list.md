@@ -42,4 +42,6 @@ class Solution(object):
 1. 先验证list是否为空
 2. 创建一个新的list，只需要初始化这个头就好咯。后边的都可以有有向表推出来
 3. p = p.next 这个是pointer更新的方式，操作的东西永远是当前的
-4. python里初始化好像只用了ListNode（0）这样的方式，觉得Java或者C都得new 或者malloc一下 来保证有新的存储空间分配给它。可以去查一下RTEmbedded
+4. python里初始化好像只用了ListNode（0）这样的方式，觉得Java或者C都得new 或者malloc一下 来保证有新的存储空间分配给它。可以去查一下RTEmbedded SYS里怎么讲heap的代码
+
+关于这道题，其实也蛮简单的，就是遍历一下 保证数据的大小顺序，如果看懂了一点都不难哎😌
