@@ -18,6 +18,7 @@
 4. 222 Count Complete Tree Nodes
 
 从今天开始日更
+[2017 Jan 25 Wed]
 
 5. 98 Validate Binary Search Tree
 6. 173 Binary Search Tree Iterator
