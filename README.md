@@ -12,3 +12,11 @@
 10. 86 Partition List [list, maintaining 2 list]
 
 ## Week 2
+1. 104 Maximum Depth of Binary Tree
+2. 112 Path Sum
+3. 235 Lowest Common Ancestor of Binary Serch Tree
+4. 222 Count Complete Tree Nodes
+
+从今天开始日更
+5. 98 Validate Binary Search Tree
+6. 173 Binary Search Tree Iterator
