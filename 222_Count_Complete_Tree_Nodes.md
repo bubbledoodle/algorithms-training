@@ -45,5 +45,5 @@ class Solution(object):
 Things to stress:
 
 1. Think of directly count through all nodes, O(n) exceed time limit.
-2. check two child branch, the level not equal, countNode respectively. 
+2. check two child branch, the level not equal, countNode respectively. 发现一个completeBT有多少层只需要走到头，看深度相等不。所以如果一个满二叉树，相等的深度，访问两边就能知道是不是全满。有条件给最后一行元素都尽量靠左，所以省去了很多没必要的元素访问
 3. equal level directly compute the number of nodes. 
