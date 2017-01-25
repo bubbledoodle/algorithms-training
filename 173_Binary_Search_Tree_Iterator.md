@@ -47,4 +47,8 @@ class BSTIterator(object):
 ```
 
 ## Thinkings
-算是
+算是里程碑式的一道题，树，栈，中序遍历，循环器
+
+1. BST的中序遍历
+2. 循环器 像代码最后段写的怎样调用，i相当于self，v maintain一个stack存储当前的量。当栈不空，stack append
+3. py
