@@ -37,8 +37,7 @@ class Solution(object):
 
 ## Thinkings
 单看code分为三个部分。第一部分检查是否空，作为每一个中断或者initial条件的返回方式
-思考这种情况：当走到一个末梢时，return root.val == sum 到上一次调用中断hasPathSum。似乎是没有机会去touch到末梢再往下走 用root == None这条来返回。
-
+思考这种情况：当走到一个末梢时，return root.val == sum 到上一次调用中断hasPathSum。似乎是没有机会去touch到末梢再往下走 用root == None这条来返回。一层一层的减少sum
 这里的递归思想不仅体现在了调用自己身上，而且在于每个调用的输入值有变化，比如前一道题的只会去改变root.left 作为递归的root输入，这里改变了sum。慢慢感受递归，不会去想很多全局的东西，一层就是一层。定义好每层的工作，也就定义好了全局的。
 
 What does [1,null,2,3] mean in binary tree representation?
