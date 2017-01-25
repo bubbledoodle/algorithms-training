@@ -51,4 +51,14 @@ class BSTIterator(object):
 
 1. BST的中序遍历
 2. 循环器 像代码最后段写的怎样调用，i相当于self，v maintain一个stack存储当前的量。当栈不空，stack append
-3. py
+3. python的栈很简单直接pop但对于中序遍历的栈实在是6 详见后面一段：
+
+>
+本题相当于考察了BST的非递归中序遍历
+需要maintain一个stack，首先从root开始push入栈直到最左节点
+初始stack为：
+10, 6, 3
+在遍历过程中，如果某个节点存在右儿子，则继续从右儿子开始push入栈直到其最左节点
+result = 3, 6
+因为6有右儿子，所以6被pop出去之后，从6为root开始push入栈直到最左节点，然后stack为：
+10， 9， 8， 7
