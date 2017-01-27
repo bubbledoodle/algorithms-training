@@ -26,4 +26,4 @@ traverse through an array. update while find a smaller one
 5. [FlowerGarden - 2004 TCCC Round 1](https://community.topcoder.com/tc?module=ProblemDetail&rd=5006&pm=1918)
 6. [AvoidRoads - 2003 TCO Semifinals 4](https://community.topcoder.com/tc?module=ProblemDetail&rd=4709&pm=1889)
 7. [ChessMetric - 2003 TCCC Round 4](https://community.topcoder.com/tc?module=ProblemDetail&rd=4482&pm=1592)
-8. 
+8. [DP must check out this](http://www.geeksforgeeks.org/dynamic-programming-set-3-longest-increasing-subsequence/)
