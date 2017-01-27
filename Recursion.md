@@ -25,4 +25,4 @@ int Fibonacci(int n){
 有些数据结构本身就是自身调用，比如link list，比如tree
 
 ## tail call 尾部调用  [confused]
-这是一类递归深度和栈大小没有关系的递归方式。external link: !(IBM Recursion Training)[http://www.ibm.com/developerworks/linux/library/l-recurs/index.html]
+这是一类递归深度和栈大小没有关系的递归方式。external link: [IBM Recursion Training](http://www.ibm.com/developerworks/linux/library/l-recurs/index.html)
