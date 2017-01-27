@@ -1,4 +1,9 @@
 # Algorighms_Exercise
+
+when things are down, refer to these blogs:
+[细语呢喃]（https://www.hrwhisper.me/?s=partition&submit=Search）
+[bookshadow](http://bookshadow.com/leetcode/)
+
 ## Week 1
 1. 169 Majority Element
 2. 229 Majority Element II [array maintaining one flag + -]
