@@ -9,7 +9,7 @@
 8. [119] pascal's triangle ii. [inline op, 2 ptr] 
 9. [118] pascal's triangle. [new array] compare to 119, still 2 ptr, hence, the 2nd ptr++ is binded in 1 ~length - 1. return type.
 10. [88] merge sorted array. [inline op, 2 ptr method] nums1[i--]这种写法
-11. [66] plus one. [inline, with bit like op] really get the logic
+11. [66] plus one. [inline, with bit like op] logic matters, 模仿十进制
 12. [35] search for insert position: [search, type1] causion about edge condition, ordinary binary edges.
 13. [27] remove element: [inline op, 2 ptr] 一开始看查重想到hash，但是显然是个same array, 2 ptr 不管不顾的问题
 14. [26] Remove Duplicates from Sorted Array:[inline op, sorted]跳过0index的一个方法`res == 0 || nums[i] != nums[i-1]`,效用sorted here is to compare near elements.
@@ -20,7 +20,7 @@ Not so trivial ones
 1. [189] Rotate Array:
 2. [122] Best time buy sell stock ii: not hard, tricky. For each loop uses only at need access i index array. 
 3. [121] Best time buy sell stock: [Inline op, 2 ptr] Maintain return value. pointer1-->buy in. pointer2-->oridinary iterator.
-4. [53] Maximum subarray:
+4. [53] Maximum subarray: [greedy] is really beautiful one to this. [inline op] however greedy here track on three things, the current sum over [0~i], the min, and the result. The result is for update condition. Note there is also divide & conquer way. 
 
 
 ## Array methods
@@ -31,6 +31,6 @@ Not so trivial ones
 
 
 ## Array convensions
-[search type 1] binary search, sorted given. 
-[search type 2] HashMap
-[inline op] basically go to see if 2 ptr helps. Also the 2nd ptr start position, use from the side that won't be used as next update. i.e. [119]的递推公式里出现了j 项和j+1项，只好从后往前更新咯。
+1. [search type 1] binary search, sorted given. 
+2. [search type 2] HashMap
+3. [inline op] basically go to see if 2 ptr helps. Also the 2nd ptr start position, use from the side that won't be used as next update. i.e. [119]的递推公式里出现了j 项和j+1项，只好从后往前更新咯。
