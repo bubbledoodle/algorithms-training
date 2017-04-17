@@ -24,10 +24,11 @@ Not so trivial ones
 
 
 ## Array methods
-1. ArrayList get, set, add
+1. ArrayList get(), set()
 2. List<List<type>> = new ArrayList<List<type>>();
 3. if (nums == null || nums.length == 0) return 0;
 4. null only work for Integer
+5. List add()
 
 
 ## Array convensions
