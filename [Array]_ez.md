@@ -31,7 +31,7 @@ Not so trivial ones
 5. List add()
 
 
-## Array convensions
+## Array conventions
 1. [search type 1] binary search, sorted given. 
 2. [search type 2] HashMap
 3. [inline op] basically go to see if 2 ptr helps. Also the 2nd ptr start position, use from the side that won't be used as next update. i.e. [119]的递推公式里出现了j 项和j+1项，只好从后往前更新咯。
