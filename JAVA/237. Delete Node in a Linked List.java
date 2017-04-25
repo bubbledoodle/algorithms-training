@@ -10,7 +10,7 @@ Supposed the linked list is 1 -> 2 -> 3 -> 4 and you are given the third node wi
 2. the class: defined has val, next, and a constructor. 
 
 3. 这道题呢，basically你不能知道前一个元素是什么，所以能做的是把下一个节点的东西copy到本节点，s.t.下一个节点没有reference。这样做的后果对于C会造成memory leak, while, JAVA will regard no reference node as garbage, then discard. 
-4. copy 这里要分开做val和指针的。
+4. 有一个很蛋疼的限制就是不能delete tail。因为只access current node的，才做分开copy val和指针。
 
 */
 
