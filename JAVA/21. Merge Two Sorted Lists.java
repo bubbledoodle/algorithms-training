@@ -11,7 +11,8 @@ Merge two sorted linked lists and return it as a new list. The new list should b
     i.variable of reference type will be init as null
     ii. null is not object, because null instance of Object equals to flase
     iii. there is only one null value in JVM, no matter how many variable refers to null.
-4.  [types, instances, value, Object]
+4.  [what exactly in null] No memory should be allocated for the null itself, because null is not actually a valid object instance. It is simply a placeholder that indicates that the object reference is not currently referring to an object.
+5.  [types, instances, value, Object]
     i. in JAVA, there are 2 kinds of types. primitive type & reference type. Reference type ----<Class type, array type>
     ii. Object is a instance of Reference type. 
     iii. most people trate Object and instance as synonyms; choose value rather than instance to refer to instance of permitive
