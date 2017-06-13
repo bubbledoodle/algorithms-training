@@ -4,7 +4,7 @@ public class Solution {
         if (0 == x) return 0;
         int left = 1, right = x/2 + 1, ans = 0;
         while(left <= right){
-            int mid = (left + right)/2;
+            int mid = (left + right)/2; // in case of overflow, you should not use this also
             if (mid <= x / mid) {
                 left = mid + 1;
                 ans = mid;
