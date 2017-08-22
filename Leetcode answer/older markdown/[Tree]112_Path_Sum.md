@@ -35,6 +35,26 @@ class Solution(object):
         return self.hasPathSum(root.left, sum - root.val) or self.hasPathSum(root.right, sum - root.val)
 ```
 
+```Java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+class Solution {
+    public boolean hasPathSum(TreeNode root, int sum) {
+        if (root == null) return false;
+        if (root.left == null && root.right == null && sum - root.val == 0) return true;
+        return hasPathSum(root.left, sum - root.val) || hasPathSum(root.right, sum - root.val);
+    }
+}
+```
+
+
 ## Thinkings
 单看code分为三个部分。第一部分检查是否空，作为每一个中断或者initial条件的返回方式
 思考这种情况：当走到一个末梢时，return root.val == sum 到上一次调用中断hasPathSum。似乎是没有机会去touch到末梢再往下走 用root == None这条来返回。一层一层的减少sum
