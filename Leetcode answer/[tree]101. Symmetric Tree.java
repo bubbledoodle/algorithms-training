@@ -19,6 +19,10 @@ But the following [1,2,2,null,3,null,3] is not:
 Trick to this is the input p q will never have the same parent except the first layer. 
 why? 
 check out here: isMirror(p.left,q.right) && isMirror(p.right,q.left);
+
+很像backtracking的分割方式 入口只有root，所以要增广成另一个函数，输入节点的
+递归的逃逸条件是 两个null pointer或者一个null另一个不是
+
 */
 
 /**
