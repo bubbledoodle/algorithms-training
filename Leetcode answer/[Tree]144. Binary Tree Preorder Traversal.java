@@ -21,6 +21,7 @@
  * }
  */
 class Solution {
+    // method 1 pass res as argument
     public List<Integer> preorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         helper(res, root);
@@ -32,5 +33,32 @@ class Solution {
         list.add(root.val);
         helper(list, root.left);
         helper(list, root.right);
+    }
+
+    // method 2 new an ArrayList everytime
+
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if(root == null) return res;
+        res.add(root.val);
+        res.addAll(preorderTraversal(root.left));
+        res.addAll(preorderTraversal(root.right));
+        return res;
+    }
+
+    // method 3 stack: Stack<TreeNode> tovisit = new Stack<TreeNode>();
+    // .push() .pop() .empty()
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        if(root == null) return res;
+        Stack<TreeNode> tovisit = new Stack<TreeNode>();
+        tovisit.push(root);
+        while(!tovisit.empty()) {
+            TreeNode node = tovisit.pop();
+            res.add(node.val);
+            if(node.right != null) tovisit.push(node.right);
+            if(node.left != null) tovisit.push(node.left);
+        }
+        return res;
     }
 }
