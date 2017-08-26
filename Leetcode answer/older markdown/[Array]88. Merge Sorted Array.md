@@ -27,5 +27,7 @@ public class Solution {
 ```
 
 ## Thinkings
+首先看到的应该是一个从array最后往前放的过程。定位于pos = m + n - 1; pos--
+考虑两个情况 序列1用光了 序列2用光了 再就是正常都没有光的情况了
 1. edge conditions, like j,i < 0. pos >=0
 2. integer array: int[], access through indexing. 

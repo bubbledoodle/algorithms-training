@@ -18,4 +18,8 @@ public class Solution {
 ```
 
 ## thinkings shitty. 
+一个值得注意的：当需要access前一个index 然而又可能造成溢出时：
+if (res == 0 || nums[i] != nums[i-1]) 很好地解决了这个问题。
+
+-----
 好的一点是 how to update a array within the same array. only care about those with nums[res]
