@@ -1,4 +1,6 @@
-// Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+// Merge k sorted linked lists and return it as one sorted list. 
+// Analyze and describe its complexity.
+
 // 在这个之前先要写出来merge两个LL的
 // 然后可以并行可以像这样divide & conquer(binary search的)来划分剩余的工作量 别作乱了
 
